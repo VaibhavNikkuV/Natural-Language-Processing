@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Text Sentiment Prediction</h1>
+
+    <form id="predictionForm">
+        <input type="file" id="csvFileInput" accept=".csv">
+        <textarea id="textInput" placeholder="Enter text..."></textarea>
+        <button type="button" onclick="predict()">Predict</button>
+        <button id="downloadBtn" style="display:none" onclick="downloadPredictions()">Download Predictions</button>
+    </form>
+
+    <div id="predictionResult"></div>
+    <div id="graphContainer"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
